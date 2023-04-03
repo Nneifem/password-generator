@@ -13,6 +13,8 @@ var specialCharacters = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', 
 
 var passwordSet = alphabets + captialAlapbets + numerics + specialCharacters;
 
+var password = [];
+
 var passwordLength = parseInt(prompt("How long should the password be? Has to be between 8 and 128."));
 if(passwordLength < 8){
   parseInt(prompt("too low, try again"));
@@ -21,6 +23,16 @@ if(passwordLength < 8){
 alphabets = prompt("Do you want lowercase in your password? Click okay for yes or cancel for no.");
 
 captialAlapbets = prompt("Do you want captial letters in your password? Click okay for yes or cancel for no.");
+
+numerics = prompt("Do you want numbers in your password? Click okay for yes or cancel for no.");
+
+specialCharacters = prompt("Do you want special characters in your password? Click okay for yes or cancel for no.");
+
+for(var i = 0; i < passwordLength; i++){
+  password.push(passwordSet[Math.floor(Math.random() * passwordSet.length)]);
+}
+ 
+console.log(password);
 
 // Write password to the #password input
 function writePassword() {
