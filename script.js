@@ -1,4 +1,8 @@
 // Assignment code here
+
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
+
 var alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 var captialAlapbets = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -9,8 +13,14 @@ var specialCharacters = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', 
 
 var passwordSet = alphabets + captialAlapbets + numerics + specialCharacters;
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+var passwordLength = parseInt(prompt("How long should the password be? Has to be between 8 and 128."));
+if(passwordLength < 8){
+  parseInt(prompt("too low, try again"));
+}
+
+alphabets = prompt("Do you want lowercase in your password? Click okay for yes or cancel for no.");
+
+captialAlapbets = prompt("Do you want captial letters in your password? Click okay for yes or cancel for no.");
 
 // Write password to the #password input
 function writePassword() {
