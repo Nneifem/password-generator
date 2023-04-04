@@ -12,8 +12,19 @@ function generatePassword(){
 
   var specialCharacters = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '>', '=', '?', '@', '[', ' \ ', ']', '^', '_', '`', '{', '}', '|', '~'];
 
-  var passwordSet = alphabets + captialAlapbets + numerics + specialCharacters; 
+  var passwordSet = alphabets + captialAlapbets + numerics + specialCharacters;
+  
+  var passwordLength = parseInt(prompt("How long do you want your password to be? Must be 8 to 128 characters long."));
+    if(passwordLength < 8 || passwordLength > 128){
+      prompt("try again, enter another length between 8 and 128");
+    }
+
+    prompt("Do you want lowercase letters in your password? Click okay for yes or cancel for no.");
+    prompt("Do you want uppercase letters in your password? Click okay for yes or cancel for no.");
+    prompt("Do you want numbers in your password? Click okay for yes or cancel for no.");
+    prompt("Do you want special characters in your password? Click okay for yes or cancel for no.")
 }
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
