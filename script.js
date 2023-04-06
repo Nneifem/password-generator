@@ -16,8 +16,8 @@ function generatePassword(){
   var finalPassword = [];
   
   var passwordLength = parseInt(prompt("How long do you want your password to be? Must be 8 to 128 characters long."));
-    if(passwordLength < 8 || passwordLength > 128){
-      prompt("try again, enter another length between 8 and 128");
+    if(passwordLength <= 8 || passwordLength >= 128){
+     passwordLength = prompt("try again, enter another length between 8 and 128");
     }
 
     var question1 = confirm("Do you want lowercase letters in your password? Click okay for yes or cancel for no.");
