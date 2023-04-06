@@ -14,28 +14,39 @@ function generatePassword(){
 
   var passwordOptions = [];
   var finalPassword = [];
-  
-  var passwordLength = parseInt(prompt("How long do you want your password to be? Must be 8 to 128 characters long."));
-    if(Number.isInteger(passwordLength) < 8 || Number.isInteger(passwordLength)  > 128){
-     passwordLength = prompt("try again, enter another length between 8 and 128");
+  var lowPasswordLength = 8;
+  var highPasswordLength = 128;
+
+  var passwordLength = prompt("How long do you want your password to be? Must be 8 to 128 characters long.");
+    if(passwordLength < lowPasswordLength || passwordLength > highPasswordLength){
+      alert("must be between 8 and 128")
+      return null;
+    }
+    else if(isNaN(passwordLength)){
+      alert("must be a number value");
+      return null;
+    }
+    else if(passwordLength % 1 != 0){
+      alert("must be a whole number");
+      return null;
     }
 
-    var question1 = confirm("Do you want lowercase letters in your password? Click okay for yes or cancel for no.");
+    var question1 = confirm("Do you want lowercase letters in your password?");
       if(question1 === true){
         passwordOptions = passwordOptions.concat(lowercaseLetters);
       }
       
-    var question2 = confirm("Do you want uppercase letters in your password? Click okay for yes or cancel for no.");
+    var question2 = confirm("Do you want uppercase letters in your password?");
       if(question2 === true){
         passwordOptions = passwordOptions.concat(uppercaseLetters);
       }
       
-    var question3 = confirm("Do you want numbers in your password? Click okay for yes or cancel for no.");
+    var question3 = confirm("Do you want numbers in your password?");
       if(question3 === true){
         passwordOptions = passwordOptions.concat(numerics);
       }
       
-    var question4 = confirm("Do you want special characters in your password? Click okay for yes or cancel for no.");
+    var question4 = confirm("Do you want special characters in your password?");
       if(question4 === true){
         passwordOptions = passwordOptions.concat(specialCharacters);
       }
