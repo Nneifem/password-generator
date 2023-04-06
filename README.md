@@ -47,4 +47,5 @@ SOFTWARE.
 ## Link
 
 Here is the link to the repo for the project: https://github.com/Nneifem/password-generator
+
 Here is the link to the website: https://nneifem.github.io/password-generator/
