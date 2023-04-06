@@ -7,16 +7,18 @@ This project was to create a website where you can randomly generate a password 
 
 ## Usage
 
-![alt text](/assets/images/Screenshot%202023-04-05%20at%209.55.54%20PM.png)
-![alt text](/assets/images/Screenshot%202023-04-05%20at%209.57.11%20PM.png)
-![alt text](/assets/images/Screenshot%202023-04-05%20at%209.57.34%20PM.png)
-![alt text](/assets/images/Screenshot%202023-04-05%20at%209.57.44%20PM.png)
-![alt text](/assets/images/Screenshot%202023-04-05%20at%209.57.56%20PM.png)
-![alt text](/assets/images/Screenshot%202023-04-05%20at%209.58.06%20PM.png)
-![alt text](/assets/images/Screenshot%202023-04-05%20at%209.58.17%20PM.png)
-![alt text](/assets/images/Screenshot%202023-04-05%20at%2010.00.45%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.17.50%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.18.04%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.18.21%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.18.35%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.18.46%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.18.57%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.19.08%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.19.18%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.19.27%20PM.png)
+![alt text](/assets/images/Screenshot%202023-04-06%20at%202.19.36%20PM.png)
 
-To use the password generator, you will need to click the red button labeled 'generate password'. After clicking on it, a pop notification will appear on the top of the screen asking you how long the you want the password to be and that it must be 8 to 128 long, if the user enters something under 8 or above 128, they will be asked to try again and reminded that it needs to be between 8 and 128. After the user enters the appropiate length, they will asked a series of questions on whether or not they want the password to have lowercase letters, uppercase letters, numbers, or special characters. Clicking 'okay' means yes and 'cancel' means no. Once thye finished answering the questions, their randomized password will be displayed in the big box in the middle.
+To use the password generator, you will need to click the red button labeled 'generate password'. After clicking on it, a pop notification will appear on the top of the screen asking you how long the you want the password to be and that it must be 8 to 128 long, if the user enters something under 8 or above 128, they will be told that it needs to be between 8 and 128. If the user enters a value that isn't a integer value, they will told to enter a number value and if they entered a decimal, they will be told to enter a whole number. After the user enters the appropiate length, they will asked a series of questions on whether or not they want the password to have lowercase letters, uppercase letters, numbers, or special characters. Clicking 'okay' means yes and 'cancel' means no. Once thye finished answering the questions, their randomized password will be displayed in the big box in the middle.
 
 
 ## License
